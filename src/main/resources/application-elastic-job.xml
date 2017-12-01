@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:reg="http://www.dangdang.com/schema/ddframe/reg"
+       xmlns:job="http://www.dangdang.com/schema/ddframe/job"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.dangdang.com/schema/ddframe/reg
+                        http://www.dangdang.com/schema/ddframe/reg/reg.xsd
+                        http://www.dangdang.com/schema/ddframe/job
+                        http://www.dangdang.com/schema/ddframe/job/job.xsd">
+
+    <!--所有参数具体参考 ：http://elasticjob.io/docs/elastic-job-lite/02-guide/config-manual/-->
+
+    <!--配置作业注册中心 -->
+    <!--参数说明
+     server-lists ： zookeeper 服务列表 （可配置集群）
+     namespace :工作空间
+      base-sleep-time-milliseconds ： 等待重试的间隔时间的初始值单位：毫秒
+      max-sleep-time-milliseconds ： 等待重试的间隔时间的最大值：毫秒
+       max-retries ：最大重试次数
+       connection-timeout-milliseconds 连接超时时间
+       session-timeout-milliseconds  回话超时时间
+       digest   连接zookeeper的权限令牌
+    -->
+    <reg:zookeeper id="regCenter" server-lists="192.168.194.128:2181" namespace="first-simple-job"
+                   base-sleep-time-milliseconds="1000"
+                   max-sleep-time-milliseconds="3000" max-retries="3" connection-timeout-milliseconds=""
+                   session-timeout-milliseconds=""
+                   digest=""/>
+
+    <!-- simple job配置-->
+    <!--参数说明
+    registry-center-ref 注册中心bean
+    cron : cron 表达式
+    sharding-total-count ： 作业分片数量
+    sharding-item-parameters ：分片序列号和参数用等号分隔，多个键值对用逗号分隔 分片序列号从0开始， value是分片的名 不可大于或等于作业分片总数
+     job-sharding-strategy-class="" 作业分片策略  把 sharding-total-count 总片数分配到各个集群节点上
+    -->
+    <job:simple id="mySimpleJob" class="com.quark.job.scheduler.MySimpleJob" registry-center-ref="regCenter"
+                cron="0/10 * * * * ?"
+                sharding-total-count="3" sharding-item-parameters="0=MyA,1=MyB,2=MyC" failover="false" misfire="true"
+                description="简单job"
+                job-sharding-strategy-class="">
+        <!--作业监听配置-->
+        <!--<job:distributed-listener class="" started-timeout-milliseconds="" completed-timeout-milliseconds=""/>-->
+    </job:simple>
+
+    <!--dataflow jOb配置-->
+    <!--event-trace-rdb-data-source 获取数据源的bean-->
+    <job:dataflow id="myDataFlowJob" class="com.quark.job.scheduler.MyDataflowJob" registry-center-ref="regCenter"
+                  cron="0/10 * * * * ?" sharding-total-count="2"
+                  event-trace-rdb-data-source="myDataSource" sharding-item-parameters="0=DataFlowA,1=DataFlowB"
+                  failover="false" misfire="true" description="数据流job"/>
+
+
+    <!--dataflow 数据源bean-->
+    <bean id="myDataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <!--如果有警告   Establishing SSL connection without server's identity verification is not recommended 可以在url 最后加上 &amp;useSSL=false -->
+        <property name="url"
+                  value="jdbc:mysql://192.168.194.128:3306/TESTDB?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
+
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="myDataSource"/>
+    </bean>
+
+
+</beans>
