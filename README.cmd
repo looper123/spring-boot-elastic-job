@@ -10,3 +10,6 @@
           guest.password=guest
 6 登录 localhost:8899  输入用户密码
 7 把已经启动的elastic job 关联的zookeeper ip配置上去  注意 namespace 必须和你项目中配置的zk的namespace相同 不然无法找到job的信息
+8 console时间追踪数据源配置 url 参数 参照格式 jdbc:mysql://192.168.194.128:3306/TESTDB?useUnicode=true&characterEncoding=UTF-8（不能直接用ip:port 的形式连接）
+这样是无法连接上的
+
