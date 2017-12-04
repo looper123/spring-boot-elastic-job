@@ -1,0 +1,16 @@
+[WARN ] 2017-12-04 10:13:46,460 --main-- [org.springframework.context.annotation.AnnotationConfigApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.dangdang.ddframe.job.lite.spring.api.SpringJobScheduler#0': Cannot create inner bean '(inner bean)#174e1b69' of type [com.quark.job.scheduler.MySimpleJob] while setting constructor argument; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '(inner bean)#174e1b69': Unsatisfied dependency expressed through field 'jobSettings'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dangdang.ddframe.job.lite.lifecycle.internal.settings.JobSettingsAPIImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ERROR] 2017-12-04 10:13:46,554 --main-- [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jobSettings in com.quark.job.scheduler.MySimpleJob required a bean of type 'com.dangdang.ddframe.job.lite.lifecycle.internal.settings.JobSettingsAPIImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.dangdang.ddframe.job.lite.lifecycle.internal.settings.JobSettingsAPIImpl' in your configuration.
+ 

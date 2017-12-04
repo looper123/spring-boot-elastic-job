@@ -9,6 +9,7 @@ import com.dangdang.ddframe.job.api.simple.SimpleJob;
  */
 public class MySimpleJob implements SimpleJob {
 
+
     @Override
     public void execute(ShardingContext context) {
         //一个job中可以进行分片   （相当于一个个小job）
@@ -24,8 +25,8 @@ public class MySimpleJob implements SimpleJob {
                 System.out.println("this is slot 2");
                 break;
         }
-    }
 
+    }
 
 
 }

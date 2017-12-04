@@ -43,7 +43,7 @@
     -->
     <!-- id 不要叫 mySimpleJob  默认有一个mySimpleJob 会覆盖你的配置 -->
     <job:simple id="simpleJobExecutor" class="com.quark.job.scheduler.MySimpleJob" registry-center-ref="regCenter"
-                 cron="0/30 * * * * ?" sharding-total-count="5"  description="简单job" sharding-item-parameters="0=MyA,1=MyB,2=MyC" failover="false"
+                 cron="0/10 * * * * ?" sharding-total-count="5"  description="简单job" sharding-item-parameters="0=MyA,1=MyB,2=MyC" failover="false"
                  misfire="true"  job-sharding-strategy-class="" event-trace-rdb-data-source="myDataSource"   monitor-port="9888" monitor-execution="true"
                 reconcile-interval-minutes="10">
         <!--注意-->
