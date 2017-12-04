@@ -265,3 +265,879 @@ Consider defining a bean of type 'com.dangdang.ddframe.job.lite.lifecycle.intern
 [INFO ] 2017-12-04 10:20:32,619 --Thread-6-- [org.springframework.context.annotation.AnnotationConfigApplicationContext] Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5a7005d: startup date [Mon Dec 04 10:20:30 CST 2017]; root of context hierarchy 
 [INFO ] 2017-12-04 10:20:32,923 --Quartz Shutdown-Hook simpleJobExecutor-- [org.quartz.core.QuartzScheduler] Scheduler simpleJobExecutor_$_NON_CLUSTERED shutdown complete. 
 [INFO ] 2017-12-04 10:20:33,037 --Quartz Shutdown-Hook myDataFlowJob-- [org.quartz.core.QuartzScheduler] Scheduler myDataFlowJob_$_NON_CLUSTERED shutdown complete. 
+[INFO ] 2017-12-04 10:44:53,922 --main-- [com.quark.job.SpringBootElasticApplication] Starting SpringBootElasticApplication on 70K5DF2VD6AVSSS with PID 13356 (started by Administrator in H:\idea workspace\spring-boot-elastic) 
+[INFO ] 2017-12-04 10:44:53,924 --main-- [com.quark.job.SpringBootElasticApplication] No active profile set, falling back to default profiles: default 
+[INFO ] 2017-12-04 10:44:53,963 --main-- [org.springframework.context.annotation.AnnotationConfigApplicationContext] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b919693: startup date [Mon Dec 04 10:44:53 CST 2017]; root of context hierarchy 
+[INFO ] 2017-12-04 10:44:54,333 --main-- [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [application-elastic-job.xml] 
+[INFO ] 2017-12-04 10:44:54,756 --main-- [org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting 
+[INFO ] 2017-12-04 10:44:54,762 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT 
+[INFO ] 2017-12-04 10:44:54,762 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:host.name=192.168.1.104 
+[INFO ] 2017-12-04 10:44:54,762 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.version=1.8.0_144 
+[INFO ] 2017-12-04 10:44:54,762 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.vendor=Oracle Corporation 
+[INFO ] 2017-12-04 10:44:54,762 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.home=C:\Program Files\Java\jdk1.8.0_144\jre 
+[INFO ] 2017-12-04 10:44:54,762 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.class.path=C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;H:\idea workspace\spring-boot-elastic\target\classes;H:\maven_repository\org\springframework\boot\spring-boot-starter\1.5.9.RELEASE\spring-boot-starter-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot\1.5.9.RELEASE\spring-boot-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\spring-context\4.3.13.RELEASE\spring-context-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-aop\4.3.13.RELEASE\spring-aop-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-expression\4.3.13.RELEASE\spring-expression-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-autoconfigure\1.5.9.RELEASE\spring-boot-autoconfigure-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-starter-logging\1.5.9.RELEASE\spring-boot-starter-logging-1.5.9.RELEASE.jar;H:\maven_repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;H:\maven_repository\org\springframework\spring-core\4.3.13.RELEASE\spring-core-4.3.13.RELEASE.jar;H:\maven_repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;H:\maven_repository\com\dangdang\elastic-job-lite-core\2.1.5\elastic-job-lite-core-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-common-core\2.1.5\elastic-job-common-core-2.1.5.jar;H:\maven_repository\com\google\guava\guava\18.0\guava-18.0.jar;H:\maven_repository\org\apache\curator\curator-framework\2.10.0\curator-framework-2.10.0.jar;H:\maven_repository\org\apache\curator\curator-client\2.10.0\curator-client-2.10.0.jar;H:\maven_repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;H:\maven_repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;H:\maven_repository\jline\jline\0.9.94\jline-0.9.94.jar;H:\maven_repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;H:\maven_repository\org\apache\curator\curator-recipes\2.10.0\curator-recipes-2.10.0.jar;H:\maven_repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;H:\maven_repository\org\quartz-scheduler\quartz\2.2.1\quartz-2.2.1.jar;H:\maven_repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;H:\maven_repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;H:\maven_repository\com\dangdang\elastic-job-lite-spring\2.1.5\elastic-job-lite-spring-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-lite-console\2.1.5\elastic-job-lite-console-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-lite-lifecycle\2.1.5\elastic-job-lite-lifecycle-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-common-restful\2.1.5\elastic-job-common-restful-2.1.5.jar;H:\maven_repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;H:\maven_repository\com\sun\jersey\jersey-servlet\1.19\jersey-servlet-1.19.jar;H:\maven_repository\com\sun\jersey\jersey-server\1.19\jersey-server-1.19.jar;H:\maven_repository\com\sun\jersey\jersey-json\1.19\jersey-json-1.19.jar;H:\maven_repository\org\codehaus\jettison\jettison\1.1\jettison-1.1.jar;H:\maven_repository\com\sun\xml\bind\jaxb-impl\2.2.3-1\jaxb-impl-2.2.3-1.jar;H:\maven_repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;H:\maven_repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;H:\maven_repository\javax\activation\activation\1.1\activation-1.1.jar;H:\maven_repository\org\codehaus\jackson\jackson-core-asl\1.9.2\jackson-core-asl-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-mapper-asl\1.9.2\jackson-mapper-asl-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-jaxrs\1.9.2\jackson-jaxrs-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-xc\1.9.2\jackson-xc-1.9.2.jar;H:\maven_repository\com\sun\jersey\jersey-core\1.19\jersey-core-1.19.jar;H:\maven_repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar;H:\maven_repository\com\sun\jersey\jersey-client\1.19\jersey-client-1.19.jar;H:\maven_repository\org\eclipse\jetty\aggregate\jetty-all-server\8.1.19.v20160209\jetty-all-server-8.1.19.v20160209.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.servlet\3.0.0.v201112011016\javax.servlet-3.0.0.v201112011016.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.security.auth.message\1.0.0.v201108011116\javax.security.auth.message-1.0.0.v201108011116.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.mail.glassfish\1.4.1.v201005082020\javax.mail.glassfish-1.4.1.v201005082020.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.activation\1.1.0.v201105071233\javax.activation-1.1.0.v201105071233.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.annotation\1.1.0.v201108011116\javax.annotation-1.1.0.v201108011116.jar;H:\maven_repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;H:\maven_repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;H:\maven_repository\org\slf4j\log4j-over-slf4j\1.7.25\log4j-over-slf4j-1.7.25.jar;H:\maven_repository\ch\qos\logback\logback-classic\1.1.11\logback-classic-1.1.11.jar;H:\maven_repository\ch\qos\logback\logback-core\1.1.11\logback-core-1.1.11.jar;H:\maven_repository\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;H:\maven_repository\commons-pool\commons-pool\1.6\commons-pool-1.6.jar;H:\maven_repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar;H:\maven_repository\org\springframework\spring-jdbc\4.3.13.RELEASE\spring-jdbc-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-beans\4.3.13.RELEASE\spring-beans-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-tx\4.3.13.RELEASE\spring-tx-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-starter-actuator\1.5.9.RELEASE\spring-boot-starter-actuator-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-actuator\1.5.9.RELEASE\spring-boot-actuator-1.5.9.RELEASE.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.8.10\jackson-databind-2.8.10.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.8.0\jackson-annotations-2.8.0.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-core\2.8.10\jackson-core-2.8.10.jar;H:\softwares\IntelliJ IDEA 15.0.2\lib\idea_rt.jar 
+[INFO ] 2017-12-04 10:44:54,763 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;H:\softwares\python3.6.3\Scripts\;H:\softwares\python3.6.3\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;H:\softwares\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.7.0_67\bin;H:\softwares\Git\cmd;H:\java softwares\Git\cmd;H:\softwares\python3.7;H:\softwares\PostgreSQL\pg96\bin;H:\softwares\ChromDriver;H:\softwares\geckodriver;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;. 
+[INFO ] 2017-12-04 10:44:54,763 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.io.tmpdir=C:\Users\Administrator\AppData\Local\Temp\ 
+[INFO ] 2017-12-04 10:44:54,763 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.compiler=<NA> 
+[INFO ] 2017-12-04 10:44:54,763 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.name=Windows 10 
+[INFO ] 2017-12-04 10:44:54,763 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.arch=amd64 
+[INFO ] 2017-12-04 10:44:54,763 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.version=10.0 
+[INFO ] 2017-12-04 10:44:54,763 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.name=Administrator 
+[INFO ] 2017-12-04 10:44:54,763 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.home=C:\Users\Administrator 
+[INFO ] 2017-12-04 10:44:54,763 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.dir=H:\idea workspace\spring-boot-elastic 
+[INFO ] 2017-12-04 10:44:54,764 --main-- [org.apache.zookeeper.ZooKeeper] Initiating client connection, connectString=192.168.194.128:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@27a7ef08 
+[INFO ] 2017-12-04 10:44:54,813 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[INFO ] 2017-12-04 10:44:54,814 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Socket connection established to 192.168.194.128/192.168.194.128:2181, initiating session 
+[INFO ] 2017-12-04 10:44:54,826 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session establishment complete on server 192.168.194.128/192.168.194.128:2181, sessionid = 0x160169e77db0027, negotiated timeout = 40000 
+[INFO ] 2017-12-04 10:44:54,828 --main-EventThread-- [org.apache.curator.framework.state.ConnectionStateManager] State change: CONNECTED 
+[INFO ] 2017-12-04 10:44:54,844 --main-- [org.springframework.jdbc.datasource.DriverManagerDataSource] Loaded JDBC driver: com.mysql.jdbc.Driver 
+[INFO ] 2017-12-04 10:44:55,236 --main-- [org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor 
+[INFO ] 2017-12-04 10:44:55,248 --main-- [org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+[INFO ] 2017-12-04 10:44:55,249 --main-- [org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.1 created. 
+[INFO ] 2017-12-04 10:44:55,250 --main-- [com.dangdang.ddframe.job.lite.internal.schedule.JobShutdownHookPlugin] Registering Quartz shutdown hook. 
+[INFO ] 2017-12-04 10:44:55,250 --main-- [org.quartz.simpl.RAMJobStore] RAMJobStore initialized. 
+[INFO ] 2017-12-04 10:44:55,250 --main-- [org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'simpleJobExecutor' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+[INFO ] 2017-12-04 10:44:55,250 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'simpleJobExecutor' initialized from an externally provided properties instance. 
+[INFO ] 2017-12-04 10:44:55,251 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.1 
+[INFO ] 2017-12-04 10:44:55,327 --main-- [org.quartz.core.QuartzScheduler] Scheduler simpleJobExecutor_$_NON_CLUSTERED started. 
+[INFO ] 2017-12-04 10:44:55,361 --main-- [org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor 
+[INFO ] 2017-12-04 10:44:55,361 --main-- [org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+[INFO ] 2017-12-04 10:44:55,361 --main-- [org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.1 created. 
+[INFO ] 2017-12-04 10:44:55,361 --main-- [com.dangdang.ddframe.job.lite.internal.schedule.JobShutdownHookPlugin] Registering Quartz shutdown hook. 
+[INFO ] 2017-12-04 10:44:55,362 --main-- [org.quartz.simpl.RAMJobStore] RAMJobStore initialized. 
+[INFO ] 2017-12-04 10:44:55,362 --main-- [org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myDataFlowJob' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+[INFO ] 2017-12-04 10:44:55,362 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'myDataFlowJob' initialized from an externally provided properties instance. 
+[INFO ] 2017-12-04 10:44:55,362 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.1 
+[INFO ] 2017-12-04 10:44:55,376 --main-- [org.quartz.core.QuartzScheduler] Scheduler myDataFlowJob_$_NON_CLUSTERED started. 
+[INFO ] 2017-12-04 10:44:55,943 --main-- [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] Registering beans for JMX exposure on startup 
+[INFO ] 2017-12-04 10:44:55,948 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Registering beans for JMX exposure on startup 
+[INFO ] 2017-12-04 10:44:55,950 --main-- [org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 0 
+[INFO ] 2017-12-04 10:44:55,952 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint] 
+[INFO ] 2017-12-04 10:44:55,967 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint] 
+[INFO ] 2017-12-04 10:44:55,980 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint] 
+[INFO ] 2017-12-04 10:44:55,983 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint] 
+[INFO ] 2017-12-04 10:44:55,985 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint] 
+[INFO ] 2017-12-04 10:44:55,988 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint] 
+[INFO ] 2017-12-04 10:44:55,995 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint] 
+[INFO ] 2017-12-04 10:44:55,998 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint] 
+[INFO ] 2017-12-04 10:44:56,001 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint] 
+[INFO ] 2017-12-04 10:44:56,003 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint] 
+[INFO ] 2017-12-04 10:44:56,005 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint] 
+[INFO ] 2017-12-04 10:44:56,010 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint] 
+[INFO ] 2017-12-04 10:44:56,024 --main-- [com.quark.job.SpringBootElasticApplication] Started SpringBootElasticApplication in 2.319 seconds (JVM running for 2.768) 
+[INFO ] 2017-12-04 11:13:16,797 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Client session timed out, have not heard from server in 26667ms for sessionid 0x160169e77db0027, closing socket connection and attempting reconnect 
+[INFO ] 2017-12-04 11:13:16,899 --main-EventThread-- [org.apache.curator.framework.state.ConnectionStateManager] State change: SUSPENDED 
+[INFO ] 2017-12-04 11:13:18,037 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[ERROR] 2017-12-04 11:13:31,911 --Curator-Framework-0-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (15005) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:835)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:809)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:64)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2017-12-04 11:13:32,905 --simpleJobExecutor_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (16006) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.instance.InstanceService.getAvailableJobInstances(InstanceService.java:75)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:13:32,906 --myDataFlowJob_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (16007) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.instance.InstanceService.getAvailableJobInstances(InstanceService.java:75)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:13:32,912 --Curator-Framework-0-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (16013) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:835)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:809)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:64)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2017-12-04 11:13:33,913 --Curator-Framework-0-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (17014) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:835)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:809)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:64)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ] 2017-12-04 11:13:33,914 --Curator-Framework-0-- [org.apache.curator.retry.ExponentialBackoffRetry] Sleep extension too large (4000). Pinning to 3000 
+[ERROR] 2017-12-04 11:13:36,915 --Curator-Framework-0-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (20016) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:835)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:809)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:64)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] 2017-12-04 11:13:36,916 --Curator-Framework-0-- [org.apache.curator.framework.state.ConnectionStateManager] State change: LOST 
+[ERROR] 2017-12-04 11:13:36,917 --Curator-Framework-0-- [org.apache.curator.framework.imps.CuratorFrameworkImpl] Background operation retry gave up 
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:728)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:857)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:809)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:64)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2017-12-04 11:13:36,919 --Curator-Framework-0-- [org.apache.curator.framework.imps.CuratorFrameworkImpl] Background retry gave up 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:835)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:809)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:64)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ] 2017-12-04 11:13:39,040 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session 0x160169e77db0027 for server null, unexpected error, closing socket connection and attempting reconnect 
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ] 2017-12-04 11:13:40,824 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[ERROR] 2017-12-04 11:13:48,909 --simpleJobExecutor_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (32010) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.instance.InstanceService.getAvailableJobInstances(InstanceService.java:75)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:13:49,913 --myDataFlowJob_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (33014) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.instance.InstanceService.getAvailableJobInstances(InstanceService.java:75)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[WARN ] 2017-12-04 11:13:49,914 --myDataFlowJob_Worker-1-- [org.apache.curator.retry.ExponentialBackoffRetry] Sleep extension too large (6000). Pinning to 3000 
+[WARN ] 2017-12-04 11:14:01,827 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session 0x160169e77db0027 for server null, unexpected error, closing socket connection and attempting reconnect 
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ] 2017-12-04 11:14:03,604 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[ERROR] 2017-12-04 11:14:06,913 --simpleJobExecutor_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (50014) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.instance.InstanceService.getAvailableJobInstances(InstanceService.java:75)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:14:07,917 --myDataFlowJob_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (51018) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.instance.InstanceService.getAvailableJobInstances(InstanceService.java:75)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[WARN ] 2017-12-04 11:14:21,917 --simpleJobExecutor_Worker-1-- [org.apache.curator.ConnectionState] Connection attempt unsuccessful after 65018 (greater than max timeout of 60000). Resetting connection and trying again with a new connection. 
+[INFO ] 2017-12-04 11:14:24,706 --simpleJobExecutor_Worker-1-- [org.apache.zookeeper.ZooKeeper] Session: 0x160169e77db0027 closed 
+[INFO ] 2017-12-04 11:14:24,706 --main-EventThread-- [org.apache.zookeeper.ClientCnxn] EventThread shut down 
+[INFO ] 2017-12-04 11:14:24,706 --simpleJobExecutor_Worker-1-- [org.apache.zookeeper.ZooKeeper] Initiating client connection, connectString=192.168.194.128:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@27a7ef08 
+[INFO ] 2017-12-04 11:14:24,712 --simpleJobExecutor_Worker-1-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[WARN ] 2017-12-04 11:14:45,713 --simpleJobExecutor_Worker-1-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect 
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ] 2017-12-04 11:14:46,813 --simpleJobExecutor_Worker-1-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[ERROR] 2017-12-04 11:15:01,816 --myDataFlowJob_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (39898) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.isNeedSharding(ShardingService.java:92)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:104)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:15:01,817 --simpleJobExecutor_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (39900) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.isNeedSharding(ShardingService.java:92)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:104)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[WARN ] 2017-12-04 11:15:07,815 --simpleJobExecutor_Worker-1-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect 
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ] 2017-12-04 11:15:08,916 --simpleJobExecutor_Worker-1-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[ERROR] 2017-12-04 11:15:10,365 --ReconcileService RUNNING-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (48448) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.hasLeader(LeaderService.java:93)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.isLeaderUntilBlock(LeaderService.java:68)
+	at com.dangdang.ddframe.job.lite.internal.reconcile.ReconcileService.runOneIteration(ReconcileService.java:59)
+	at com.google.common.util.concurrent.AbstractScheduledService$1$1.run(AbstractScheduledService.java:174)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2017-12-04 11:15:10,420 --ReconcileService RUNNING-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (48503) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.hasLeader(LeaderService.java:93)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.isLeaderUntilBlock(LeaderService.java:68)
+	at com.dangdang.ddframe.job.lite.internal.reconcile.ReconcileService.runOneIteration(ReconcileService.java:59)
+	at com.google.common.util.concurrent.AbstractScheduledService$1$1.run(AbstractScheduledService.java:174)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2017-12-04 11:15:17,819 --myDataFlowJob_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (55902) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.isNeedSharding(ShardingService.java:92)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:104)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:15:19,823 --simpleJobExecutor_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (57906) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.isNeedSharding(ShardingService.java:92)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.shardingIfNecessary(ShardingService.java:104)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:115)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[WARN ] 2017-12-04 11:15:26,369 --ReconcileService RUNNING-- [org.apache.curator.ConnectionState] Connection attempt unsuccessful after 64452 (greater than max timeout of 60000). Resetting connection and trying again with a new connection. 
+[INFO ] 2017-12-04 11:15:30,018 --ReconcileService RUNNING-- [org.apache.zookeeper.ZooKeeper] Session: 0x0 closed 
+[INFO ] 2017-12-04 11:15:30,018 --simpleJobExecutor_Worker-1-EventThread-- [org.apache.zookeeper.ClientCnxn] EventThread shut down 
+[INFO ] 2017-12-04 11:15:30,018 --ReconcileService RUNNING-- [org.apache.zookeeper.ZooKeeper] Initiating client connection, connectString=192.168.194.128:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@27a7ef08 
+[INFO ] 2017-12-04 11:15:30,023 --ReconcileService RUNNING-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[WARN ] 2017-12-04 11:15:51,027 --ReconcileService RUNNING-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect 
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ] 2017-12-04 11:15:52,128 --ReconcileService RUNNING-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[ERROR] 2017-12-04 11:16:06,131 --simpleJobExecutor_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (39762) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.server.ServerService.hasOnlineInstances(ServerService.java:84)
+	at com.dangdang.ddframe.job.lite.internal.server.ServerService.isAvailableServer(ServerService.java:80)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.getLocalShardingItems(ShardingService.java:176)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:116)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:16:06,132 --myDataFlowJob_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (39763) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.server.ServerService.hasOnlineInstances(ServerService.java:84)
+	at com.dangdang.ddframe.job.lite.internal.server.ServerService.isAvailableServer(ServerService.java:80)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.getLocalShardingItems(ShardingService.java:176)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:116)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:16:07,131 --ReconcileService RUNNING-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (40762) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.hasLeader(LeaderService.java:93)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.isLeaderUntilBlock(LeaderService.java:68)
+	at com.dangdang.ddframe.job.lite.internal.reconcile.ReconcileService.runOneIteration(ReconcileService.java:59)
+	at com.google.common.util.concurrent.AbstractScheduledService$1$1.run(AbstractScheduledService.java:174)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2017-12-04 11:16:07,132 --ReconcileService RUNNING-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (40762) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.hasLeader(LeaderService.java:93)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.isLeaderUntilBlock(LeaderService.java:68)
+	at com.dangdang.ddframe.job.lite.internal.reconcile.ReconcileService.runOneIteration(ReconcileService.java:59)
+	at com.google.common.util.concurrent.AbstractScheduledService$1$1.run(AbstractScheduledService.java:174)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ] 2017-12-04 11:16:07,132 --ReconcileService RUNNING-- [org.apache.curator.retry.ExponentialBackoffRetry] Sleep extension too large (5000). Pinning to 3000 
+[WARN ] 2017-12-04 11:16:13,130 --ReconcileService RUNNING-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect 
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ] 2017-12-04 11:16:14,231 --ReconcileService RUNNING-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[ERROR] 2017-12-04 11:16:22,135 --simpleJobExecutor_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (55766) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.server.ServerService.hasOnlineInstances(ServerService.java:84)
+	at com.dangdang.ddframe.job.lite.internal.server.ServerService.isAvailableServer(ServerService.java:80)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.getLocalShardingItems(ShardingService.java:176)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:116)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:16:22,139 --myDataFlowJob_Worker-1-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (55770) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getChildrenKeys(ZookeeperRegistryCenter.java:170)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.getJobNodeChildrenKeys(JobNodeStorage.java:92)
+	at com.dangdang.ddframe.job.lite.internal.server.ServerService.hasOnlineInstances(ServerService.java:84)
+	at com.dangdang.ddframe.job.lite.internal.server.ServerService.isAvailableServer(ServerService.java:80)
+	at com.dangdang.ddframe.job.lite.internal.sharding.ShardingService.getLocalShardingItems(ShardingService.java:176)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJobFacade.getShardingContexts(LiteJobFacade.java:116)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:103)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+[ERROR] 2017-12-04 11:16:24,134 --ReconcileService RUNNING-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (57765) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.hasLeader(LeaderService.java:93)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.isLeaderUntilBlock(LeaderService.java:68)
+	at com.dangdang.ddframe.job.lite.internal.reconcile.ReconcileService.runOneIteration(ReconcileService.java:59)
+	at com.google.common.util.concurrent.AbstractScheduledService$1$1.run(AbstractScheduledService.java:174)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2017-12-04 11:16:25,135 --ReconcileService RUNNING-- [org.apache.curator.ConnectionState] Connection timed out for connection string (192.168.194.128:2181) and timeout (15000) / elapsed (58766) 
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:88)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:116)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:215)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:108)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:212)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:205)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:168)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:39)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.isExisted(ZookeeperRegistryCenter.java:205)
+	at com.dangdang.ddframe.job.lite.internal.storage.JobNodeStorage.isJobNodeExisted(JobNodeStorage.java:62)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.hasLeader(LeaderService.java:93)
+	at com.dangdang.ddframe.job.lite.internal.election.LeaderService.isLeaderUntilBlock(LeaderService.java:68)
+	at com.dangdang.ddframe.job.lite.internal.reconcile.ReconcileService.runOneIteration(ReconcileService.java:59)
+	at com.google.common.util.concurrent.AbstractScheduledService$1$1.run(AbstractScheduledService.java:174)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] 2017-12-04 14:30:30,524 --main-- [com.quark.job.SpringBootElasticApplication] Starting SpringBootElasticApplication on 70K5DF2VD6AVSSS with PID 9984 (started by Administrator in H:\idea workspace\spring-boot-elastic) 
+[INFO ] 2017-12-04 14:30:30,526 --main-- [com.quark.job.SpringBootElasticApplication] No active profile set, falling back to default profiles: default 
+[INFO ] 2017-12-04 14:30:30,581 --main-- [org.springframework.context.annotation.AnnotationConfigApplicationContext] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b919693: startup date [Mon Dec 04 14:30:30 CST 2017]; root of context hierarchy 
+[INFO ] 2017-12-04 14:30:30,969 --main-- [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [application-elastic-job.xml] 
+[INFO ] 2017-12-04 14:30:31,422 --main-- [org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting 
+[INFO ] 2017-12-04 14:30:31,428 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT 
+[INFO ] 2017-12-04 14:30:31,428 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:host.name=192.168.1.104 
+[INFO ] 2017-12-04 14:30:31,428 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.version=1.8.0_144 
+[INFO ] 2017-12-04 14:30:31,428 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.vendor=Oracle Corporation 
+[INFO ] 2017-12-04 14:30:31,428 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.home=C:\Program Files\Java\jdk1.8.0_144\jre 
+[INFO ] 2017-12-04 14:30:31,428 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.class.path=C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;H:\idea workspace\spring-boot-elastic\target\classes;H:\maven_repository\org\springframework\boot\spring-boot-starter\1.5.9.RELEASE\spring-boot-starter-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot\1.5.9.RELEASE\spring-boot-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\spring-context\4.3.13.RELEASE\spring-context-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-aop\4.3.13.RELEASE\spring-aop-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-expression\4.3.13.RELEASE\spring-expression-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-autoconfigure\1.5.9.RELEASE\spring-boot-autoconfigure-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-starter-logging\1.5.9.RELEASE\spring-boot-starter-logging-1.5.9.RELEASE.jar;H:\maven_repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;H:\maven_repository\org\springframework\spring-core\4.3.13.RELEASE\spring-core-4.3.13.RELEASE.jar;H:\maven_repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;H:\maven_repository\com\dangdang\elastic-job-lite-core\2.1.5\elastic-job-lite-core-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-common-core\2.1.5\elastic-job-common-core-2.1.5.jar;H:\maven_repository\com\google\guava\guava\18.0\guava-18.0.jar;H:\maven_repository\org\apache\curator\curator-framework\2.10.0\curator-framework-2.10.0.jar;H:\maven_repository\org\apache\curator\curator-client\2.10.0\curator-client-2.10.0.jar;H:\maven_repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;H:\maven_repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;H:\maven_repository\jline\jline\0.9.94\jline-0.9.94.jar;H:\maven_repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;H:\maven_repository\org\apache\curator\curator-recipes\2.10.0\curator-recipes-2.10.0.jar;H:\maven_repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;H:\maven_repository\org\quartz-scheduler\quartz\2.2.1\quartz-2.2.1.jar;H:\maven_repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;H:\maven_repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;H:\maven_repository\com\dangdang\elastic-job-lite-spring\2.1.5\elastic-job-lite-spring-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-lite-console\2.1.5\elastic-job-lite-console-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-lite-lifecycle\2.1.5\elastic-job-lite-lifecycle-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-common-restful\2.1.5\elastic-job-common-restful-2.1.5.jar;H:\maven_repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;H:\maven_repository\com\sun\jersey\jersey-servlet\1.19\jersey-servlet-1.19.jar;H:\maven_repository\com\sun\jersey\jersey-server\1.19\jersey-server-1.19.jar;H:\maven_repository\com\sun\jersey\jersey-json\1.19\jersey-json-1.19.jar;H:\maven_repository\org\codehaus\jettison\jettison\1.1\jettison-1.1.jar;H:\maven_repository\com\sun\xml\bind\jaxb-impl\2.2.3-1\jaxb-impl-2.2.3-1.jar;H:\maven_repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;H:\maven_repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;H:\maven_repository\javax\activation\activation\1.1\activation-1.1.jar;H:\maven_repository\org\codehaus\jackson\jackson-core-asl\1.9.2\jackson-core-asl-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-mapper-asl\1.9.2\jackson-mapper-asl-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-jaxrs\1.9.2\jackson-jaxrs-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-xc\1.9.2\jackson-xc-1.9.2.jar;H:\maven_repository\com\sun\jersey\jersey-core\1.19\jersey-core-1.19.jar;H:\maven_repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar;H:\maven_repository\com\sun\jersey\jersey-client\1.19\jersey-client-1.19.jar;H:\maven_repository\org\eclipse\jetty\aggregate\jetty-all-server\8.1.19.v20160209\jetty-all-server-8.1.19.v20160209.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.servlet\3.0.0.v201112011016\javax.servlet-3.0.0.v201112011016.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.security.auth.message\1.0.0.v201108011116\javax.security.auth.message-1.0.0.v201108011116.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.mail.glassfish\1.4.1.v201005082020\javax.mail.glassfish-1.4.1.v201005082020.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.activation\1.1.0.v201105071233\javax.activation-1.1.0.v201105071233.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.annotation\1.1.0.v201108011116\javax.annotation-1.1.0.v201108011116.jar;H:\maven_repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;H:\maven_repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;H:\maven_repository\org\slf4j\log4j-over-slf4j\1.7.25\log4j-over-slf4j-1.7.25.jar;H:\maven_repository\ch\qos\logback\logback-classic\1.1.11\logback-classic-1.1.11.jar;H:\maven_repository\ch\qos\logback\logback-core\1.1.11\logback-core-1.1.11.jar;H:\maven_repository\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;H:\maven_repository\commons-pool\commons-pool\1.6\commons-pool-1.6.jar;H:\maven_repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar;H:\maven_repository\org\springframework\spring-jdbc\4.3.13.RELEASE\spring-jdbc-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-beans\4.3.13.RELEASE\spring-beans-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-tx\4.3.13.RELEASE\spring-tx-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-starter-actuator\1.5.9.RELEASE\spring-boot-starter-actuator-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-actuator\1.5.9.RELEASE\spring-boot-actuator-1.5.9.RELEASE.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.8.10\jackson-databind-2.8.10.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.8.0\jackson-annotations-2.8.0.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-core\2.8.10\jackson-core-2.8.10.jar;H:\softwares\IntelliJ IDEA 15.0.2\lib\idea_rt.jar 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;H:\softwares\python3.6.3\Scripts\;H:\softwares\python3.6.3\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;H:\softwares\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.7.0_67\bin;H:\softwares\Git\cmd;H:\java softwares\Git\cmd;H:\softwares\python3.7;H:\softwares\PostgreSQL\pg96\bin;H:\softwares\ChromDriver;H:\softwares\geckodriver;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;. 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.io.tmpdir=C:\Users\Administrator\AppData\Local\Temp\ 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.compiler=<NA> 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.name=Windows 10 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.arch=amd64 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.version=10.0 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.name=Administrator 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.home=C:\Users\Administrator 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.dir=H:\idea workspace\spring-boot-elastic 
+[INFO ] 2017-12-04 14:30:31,431 --main-- [org.apache.zookeeper.ZooKeeper] Initiating client connection, connectString=192.168.194.128:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@71dfcf21 
+[INFO ] 2017-12-04 14:30:31,482 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[INFO ] 2017-12-04 14:30:31,483 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Socket connection established to 192.168.194.128/192.168.194.128:2181, initiating session 
+[INFO ] 2017-12-04 14:30:31,493 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session establishment complete on server 192.168.194.128/192.168.194.128:2181, sessionid = 0x160201b0f690002, negotiated timeout = 40000 
+[INFO ] 2017-12-04 14:30:31,496 --main-EventThread-- [org.apache.curator.framework.state.ConnectionStateManager] State change: CONNECTED 
+[INFO ] 2017-12-04 14:30:31,514 --main-- [org.springframework.jdbc.datasource.DriverManagerDataSource] Loaded JDBC driver: com.mysql.jdbc.Driver 
+[INFO ] 2017-12-04 14:30:31,924 --main-- [org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor 
+[INFO ] 2017-12-04 14:30:31,936 --main-- [org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+[INFO ] 2017-12-04 14:30:31,938 --main-- [org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.1 created. 
+[INFO ] 2017-12-04 14:30:31,940 --main-- [com.dangdang.ddframe.job.lite.internal.schedule.JobShutdownHookPlugin] Registering Quartz shutdown hook. 
+[INFO ] 2017-12-04 14:30:31,941 --main-- [org.quartz.simpl.RAMJobStore] RAMJobStore initialized. 
+[INFO ] 2017-12-04 14:30:31,943 --main-- [org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'simpleJobExecutor' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+[INFO ] 2017-12-04 14:30:31,943 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'simpleJobExecutor' initialized from an externally provided properties instance. 
+[INFO ] 2017-12-04 14:30:31,943 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.1 
+[INFO ] 2017-12-04 14:30:32,046 --main-- [org.quartz.core.QuartzScheduler] Scheduler simpleJobExecutor_$_NON_CLUSTERED started. 
+[INFO ] 2017-12-04 14:30:32,690 --main-- [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] Registering beans for JMX exposure on startup 
+[INFO ] 2017-12-04 14:30:32,692 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Registering beans for JMX exposure on startup 
+[INFO ] 2017-12-04 14:30:32,695 --main-- [org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 0 
+[INFO ] 2017-12-04 14:30:32,696 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint] 
+[INFO ] 2017-12-04 14:30:32,710 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint] 
+[INFO ] 2017-12-04 14:30:32,721 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint] 
+[INFO ] 2017-12-04 14:30:32,725 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint] 
+[INFO ] 2017-12-04 14:30:32,726 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint] 
+[INFO ] 2017-12-04 14:30:32,728 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint] 
+[INFO ] 2017-12-04 14:30:32,733 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint] 
+[INFO ] 2017-12-04 14:30:32,734 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint] 
+[INFO ] 2017-12-04 14:30:32,736 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint] 
+[INFO ] 2017-12-04 14:30:32,737 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint] 
+[INFO ] 2017-12-04 14:30:32,739 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint] 
+[INFO ] 2017-12-04 14:30:32,742 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint] 
+[INFO ] 2017-12-04 14:30:32,753 --main-- [com.quark.job.SpringBootElasticApplication] Started SpringBootElasticApplication in 2.481 seconds (JVM running for 3.025) 
+[INFO ] 2017-12-04 14:47:32,878 --main-- [com.quark.job.SpringBootElasticApplication] Starting SpringBootElasticApplication on 70K5DF2VD6AVSSS with PID 6668 (started by Administrator in H:\idea workspace\spring-boot-elastic) 
+[INFO ] 2017-12-04 14:47:32,881 --main-- [com.quark.job.SpringBootElasticApplication] No active profile set, falling back to default profiles: default 
+[INFO ] 2017-12-04 14:47:32,941 --main-- [org.springframework.context.annotation.AnnotationConfigApplicationContext] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b919693: startup date [Mon Dec 04 14:47:32 CST 2017]; root of context hierarchy 
+[INFO ] 2017-12-04 14:47:33,404 --main-- [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [application-elastic-job.xml] 
+[INFO ] 2017-12-04 14:47:33,831 --main-- [org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting 
+[INFO ] 2017-12-04 14:47:33,837 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT 
+[INFO ] 2017-12-04 14:47:33,837 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:host.name=192.168.1.104 
+[INFO ] 2017-12-04 14:47:33,837 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.version=1.8.0_144 
+[INFO ] 2017-12-04 14:47:33,837 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.vendor=Oracle Corporation 
+[INFO ] 2017-12-04 14:47:33,837 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.home=C:\Program Files\Java\jdk1.8.0_144\jre 
+[INFO ] 2017-12-04 14:47:33,837 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.class.path=C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;H:\idea workspace\spring-boot-elastic\target\classes;H:\maven_repository\org\springframework\boot\spring-boot-starter\1.5.9.RELEASE\spring-boot-starter-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot\1.5.9.RELEASE\spring-boot-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\spring-context\4.3.13.RELEASE\spring-context-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-aop\4.3.13.RELEASE\spring-aop-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-expression\4.3.13.RELEASE\spring-expression-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-autoconfigure\1.5.9.RELEASE\spring-boot-autoconfigure-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-starter-logging\1.5.9.RELEASE\spring-boot-starter-logging-1.5.9.RELEASE.jar;H:\maven_repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;H:\maven_repository\org\springframework\spring-core\4.3.13.RELEASE\spring-core-4.3.13.RELEASE.jar;H:\maven_repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;H:\maven_repository\com\dangdang\elastic-job-lite-core\2.1.5\elastic-job-lite-core-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-common-core\2.1.5\elastic-job-common-core-2.1.5.jar;H:\maven_repository\com\google\guava\guava\18.0\guava-18.0.jar;H:\maven_repository\org\apache\curator\curator-framework\2.10.0\curator-framework-2.10.0.jar;H:\maven_repository\org\apache\curator\curator-client\2.10.0\curator-client-2.10.0.jar;H:\maven_repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;H:\maven_repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;H:\maven_repository\jline\jline\0.9.94\jline-0.9.94.jar;H:\maven_repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;H:\maven_repository\org\apache\curator\curator-recipes\2.10.0\curator-recipes-2.10.0.jar;H:\maven_repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;H:\maven_repository\org\quartz-scheduler\quartz\2.2.1\quartz-2.2.1.jar;H:\maven_repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;H:\maven_repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;H:\maven_repository\com\dangdang\elastic-job-lite-spring\2.1.5\elastic-job-lite-spring-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-lite-console\2.1.5\elastic-job-lite-console-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-lite-lifecycle\2.1.5\elastic-job-lite-lifecycle-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-common-restful\2.1.5\elastic-job-common-restful-2.1.5.jar;H:\maven_repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;H:\maven_repository\com\sun\jersey\jersey-servlet\1.19\jersey-servlet-1.19.jar;H:\maven_repository\com\sun\jersey\jersey-server\1.19\jersey-server-1.19.jar;H:\maven_repository\com\sun\jersey\jersey-json\1.19\jersey-json-1.19.jar;H:\maven_repository\org\codehaus\jettison\jettison\1.1\jettison-1.1.jar;H:\maven_repository\com\sun\xml\bind\jaxb-impl\2.2.3-1\jaxb-impl-2.2.3-1.jar;H:\maven_repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;H:\maven_repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;H:\maven_repository\javax\activation\activation\1.1\activation-1.1.jar;H:\maven_repository\org\codehaus\jackson\jackson-core-asl\1.9.2\jackson-core-asl-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-mapper-asl\1.9.2\jackson-mapper-asl-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-jaxrs\1.9.2\jackson-jaxrs-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-xc\1.9.2\jackson-xc-1.9.2.jar;H:\maven_repository\com\sun\jersey\jersey-core\1.19\jersey-core-1.19.jar;H:\maven_repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar;H:\maven_repository\com\sun\jersey\jersey-client\1.19\jersey-client-1.19.jar;H:\maven_repository\org\eclipse\jetty\aggregate\jetty-all-server\8.1.19.v20160209\jetty-all-server-8.1.19.v20160209.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.servlet\3.0.0.v201112011016\javax.servlet-3.0.0.v201112011016.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.security.auth.message\1.0.0.v201108011116\javax.security.auth.message-1.0.0.v201108011116.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.mail.glassfish\1.4.1.v201005082020\javax.mail.glassfish-1.4.1.v201005082020.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.activation\1.1.0.v201105071233\javax.activation-1.1.0.v201105071233.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.annotation\1.1.0.v201108011116\javax.annotation-1.1.0.v201108011116.jar;H:\maven_repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;H:\maven_repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;H:\maven_repository\org\slf4j\log4j-over-slf4j\1.7.25\log4j-over-slf4j-1.7.25.jar;H:\maven_repository\ch\qos\logback\logback-classic\1.1.11\logback-classic-1.1.11.jar;H:\maven_repository\ch\qos\logback\logback-core\1.1.11\logback-core-1.1.11.jar;H:\maven_repository\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;H:\maven_repository\commons-pool\commons-pool\1.6\commons-pool-1.6.jar;H:\maven_repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar;H:\maven_repository\org\springframework\spring-jdbc\4.3.13.RELEASE\spring-jdbc-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-beans\4.3.13.RELEASE\spring-beans-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-tx\4.3.13.RELEASE\spring-tx-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-starter-actuator\1.5.9.RELEASE\spring-boot-starter-actuator-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-actuator\1.5.9.RELEASE\spring-boot-actuator-1.5.9.RELEASE.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.8.10\jackson-databind-2.8.10.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.8.0\jackson-annotations-2.8.0.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-core\2.8.10\jackson-core-2.8.10.jar;H:\softwares\IntelliJ IDEA 15.0.2\lib\idea_rt.jar 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;H:\softwares\python3.6.3\Scripts\;H:\softwares\python3.6.3\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;H:\softwares\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.7.0_67\bin;H:\softwares\Git\cmd;H:\java softwares\Git\cmd;H:\softwares\python3.7;H:\softwares\PostgreSQL\pg96\bin;H:\softwares\ChromDriver;H:\softwares\geckodriver;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;. 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.io.tmpdir=C:\Users\Administrator\AppData\Local\Temp\ 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.compiler=<NA> 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.name=Windows 10 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.arch=amd64 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.version=10.0 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.name=Administrator 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.home=C:\Users\Administrator 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.dir=H:\idea workspace\spring-boot-elastic 
+[INFO ] 2017-12-04 14:47:33,839 --main-- [org.apache.zookeeper.ZooKeeper] Initiating client connection, connectString=192.168.194.128:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@29528a22 
+[INFO ] 2017-12-04 14:47:33,889 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[INFO ] 2017-12-04 14:47:33,890 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Socket connection established to 192.168.194.128/192.168.194.128:2181, initiating session 
+[INFO ] 2017-12-04 14:47:33,896 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session establishment complete on server 192.168.194.128/192.168.194.128:2181, sessionid = 0x160201b0f690006, negotiated timeout = 40000 
+[INFO ] 2017-12-04 14:47:33,899 --main-EventThread-- [org.apache.curator.framework.state.ConnectionStateManager] State change: CONNECTED 
+[INFO ] 2017-12-04 14:47:33,918 --main-- [org.springframework.jdbc.datasource.DriverManagerDataSource] Loaded JDBC driver: com.mysql.jdbc.Driver 
+[INFO ] 2017-12-04 14:47:34,285 --main-- [org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor 
+[INFO ] 2017-12-04 14:47:34,298 --main-- [org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+[INFO ] 2017-12-04 14:47:34,299 --main-- [org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.1 created. 
+[INFO ] 2017-12-04 14:47:34,301 --main-- [com.dangdang.ddframe.job.lite.internal.schedule.JobShutdownHookPlugin] Registering Quartz shutdown hook. 
+[INFO ] 2017-12-04 14:47:34,301 --main-- [org.quartz.simpl.RAMJobStore] RAMJobStore initialized. 
+[INFO ] 2017-12-04 14:47:34,302 --main-- [org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'simpleJobExecutor' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+[INFO ] 2017-12-04 14:47:34,302 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'simpleJobExecutor' initialized from an externally provided properties instance. 
+[INFO ] 2017-12-04 14:47:34,302 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.1 
+[INFO ] 2017-12-04 14:47:34,384 --main-- [org.quartz.core.QuartzScheduler] Scheduler simpleJobExecutor_$_NON_CLUSTERED started. 
+[INFO ] 2017-12-04 14:47:34,420 --main-- [org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor 
+[INFO ] 2017-12-04 14:47:34,420 --main-- [org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+[INFO ] 2017-12-04 14:47:34,420 --main-- [org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.1 created. 
+[INFO ] 2017-12-04 14:47:34,420 --main-- [com.dangdang.ddframe.job.lite.internal.schedule.JobShutdownHookPlugin] Registering Quartz shutdown hook. 
+[INFO ] 2017-12-04 14:47:34,420 --main-- [org.quartz.simpl.RAMJobStore] RAMJobStore initialized. 
+[INFO ] 2017-12-04 14:47:34,420 --main-- [org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myDataFlowJob' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+[INFO ] 2017-12-04 14:47:34,420 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'myDataFlowJob' initialized from an externally provided properties instance. 
+[INFO ] 2017-12-04 14:47:34,420 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.1 
+[INFO ] 2017-12-04 14:47:34,437 --main-- [org.quartz.core.QuartzScheduler] Scheduler myDataFlowJob_$_NON_CLUSTERED started. 
+[INFO ] 2017-12-04 14:47:35,011 --main-- [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] Registering beans for JMX exposure on startup 
+[INFO ] 2017-12-04 14:47:35,014 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Registering beans for JMX exposure on startup 
+[INFO ] 2017-12-04 14:47:35,016 --main-- [org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 0 
+[INFO ] 2017-12-04 14:47:35,017 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint] 
+[INFO ] 2017-12-04 14:47:35,029 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint] 
+[INFO ] 2017-12-04 14:47:35,037 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint] 
+[INFO ] 2017-12-04 14:47:35,040 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint] 
+[INFO ] 2017-12-04 14:47:35,042 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint] 
+[INFO ] 2017-12-04 14:47:35,044 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint] 
+[INFO ] 2017-12-04 14:47:35,048 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint] 
+[INFO ] 2017-12-04 14:47:35,050 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint] 
+[INFO ] 2017-12-04 14:47:35,052 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint] 
+[INFO ] 2017-12-04 14:47:35,053 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint] 
+[INFO ] 2017-12-04 14:47:35,055 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint] 
+[INFO ] 2017-12-04 14:47:35,059 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint] 
+[INFO ] 2017-12-04 14:47:35,072 --main-- [com.quark.job.SpringBootElasticApplication] Started SpringBootElasticApplication in 2.394 seconds (JVM running for 2.841) 
+[INFO ] 2017-12-04 15:12:38,094 --main-- [com.quark.job.SpringBootElasticApplication] Starting SpringBootElasticApplication on 70K5DF2VD6AVSSS with PID 5764 (started by Administrator in H:\idea workspace\spring-boot-elastic) 
+[INFO ] 2017-12-04 15:12:38,097 --main-- [com.quark.job.SpringBootElasticApplication] No active profile set, falling back to default profiles: default 
+[INFO ] 2017-12-04 15:12:38,147 --main-- [org.springframework.context.annotation.AnnotationConfigApplicationContext] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b919693: startup date [Mon Dec 04 15:12:38 CST 2017]; root of context hierarchy 
+[INFO ] 2017-12-04 15:12:38,540 --main-- [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [application-elastic-job.xml] 
+[INFO ] 2017-12-04 15:12:38,958 --main-- [org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:host.name=192.168.1.104 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.version=1.8.0_144 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.vendor=Oracle Corporation 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.home=C:\Program Files\Java\jdk1.8.0_144\jre 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.class.path=C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;H:\idea workspace\spring-boot-elastic\target\classes;H:\maven_repository\org\springframework\boot\spring-boot-starter\1.5.9.RELEASE\spring-boot-starter-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot\1.5.9.RELEASE\spring-boot-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\spring-context\4.3.13.RELEASE\spring-context-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-aop\4.3.13.RELEASE\spring-aop-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-expression\4.3.13.RELEASE\spring-expression-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-autoconfigure\1.5.9.RELEASE\spring-boot-autoconfigure-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-starter-logging\1.5.9.RELEASE\spring-boot-starter-logging-1.5.9.RELEASE.jar;H:\maven_repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;H:\maven_repository\org\springframework\spring-core\4.3.13.RELEASE\spring-core-4.3.13.RELEASE.jar;H:\maven_repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;H:\maven_repository\com\dangdang\elastic-job-lite-core\2.1.5\elastic-job-lite-core-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-common-core\2.1.5\elastic-job-common-core-2.1.5.jar;H:\maven_repository\com\google\guava\guava\18.0\guava-18.0.jar;H:\maven_repository\org\apache\curator\curator-framework\2.10.0\curator-framework-2.10.0.jar;H:\maven_repository\org\apache\curator\curator-client\2.10.0\curator-client-2.10.0.jar;H:\maven_repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;H:\maven_repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;H:\maven_repository\jline\jline\0.9.94\jline-0.9.94.jar;H:\maven_repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;H:\maven_repository\org\apache\curator\curator-recipes\2.10.0\curator-recipes-2.10.0.jar;H:\maven_repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;H:\maven_repository\org\quartz-scheduler\quartz\2.2.1\quartz-2.2.1.jar;H:\maven_repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;H:\maven_repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;H:\maven_repository\com\dangdang\elastic-job-lite-spring\2.1.5\elastic-job-lite-spring-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-lite-console\2.1.5\elastic-job-lite-console-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-lite-lifecycle\2.1.5\elastic-job-lite-lifecycle-2.1.5.jar;H:\maven_repository\com\dangdang\elastic-job-common-restful\2.1.5\elastic-job-common-restful-2.1.5.jar;H:\maven_repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;H:\maven_repository\com\sun\jersey\jersey-servlet\1.19\jersey-servlet-1.19.jar;H:\maven_repository\com\sun\jersey\jersey-server\1.19\jersey-server-1.19.jar;H:\maven_repository\com\sun\jersey\jersey-json\1.19\jersey-json-1.19.jar;H:\maven_repository\org\codehaus\jettison\jettison\1.1\jettison-1.1.jar;H:\maven_repository\com\sun\xml\bind\jaxb-impl\2.2.3-1\jaxb-impl-2.2.3-1.jar;H:\maven_repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;H:\maven_repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;H:\maven_repository\javax\activation\activation\1.1\activation-1.1.jar;H:\maven_repository\org\codehaus\jackson\jackson-core-asl\1.9.2\jackson-core-asl-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-mapper-asl\1.9.2\jackson-mapper-asl-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-jaxrs\1.9.2\jackson-jaxrs-1.9.2.jar;H:\maven_repository\org\codehaus\jackson\jackson-xc\1.9.2\jackson-xc-1.9.2.jar;H:\maven_repository\com\sun\jersey\jersey-core\1.19\jersey-core-1.19.jar;H:\maven_repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar;H:\maven_repository\com\sun\jersey\jersey-client\1.19\jersey-client-1.19.jar;H:\maven_repository\org\eclipse\jetty\aggregate\jetty-all-server\8.1.19.v20160209\jetty-all-server-8.1.19.v20160209.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.servlet\3.0.0.v201112011016\javax.servlet-3.0.0.v201112011016.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.security.auth.message\1.0.0.v201108011116\javax.security.auth.message-1.0.0.v201108011116.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.mail.glassfish\1.4.1.v201005082020\javax.mail.glassfish-1.4.1.v201005082020.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.activation\1.1.0.v201105071233\javax.activation-1.1.0.v201105071233.jar;H:\maven_repository\org\eclipse\jetty\orbit\javax.annotation\1.1.0.v201108011116\javax.annotation-1.1.0.v201108011116.jar;H:\maven_repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;H:\maven_repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;H:\maven_repository\org\slf4j\log4j-over-slf4j\1.7.25\log4j-over-slf4j-1.7.25.jar;H:\maven_repository\ch\qos\logback\logback-classic\1.1.11\logback-classic-1.1.11.jar;H:\maven_repository\ch\qos\logback\logback-core\1.1.11\logback-core-1.1.11.jar;H:\maven_repository\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;H:\maven_repository\commons-pool\commons-pool\1.6\commons-pool-1.6.jar;H:\maven_repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar;H:\maven_repository\org\springframework\spring-jdbc\4.3.13.RELEASE\spring-jdbc-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-beans\4.3.13.RELEASE\spring-beans-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\spring-tx\4.3.13.RELEASE\spring-tx-4.3.13.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-starter-actuator\1.5.9.RELEASE\spring-boot-starter-actuator-1.5.9.RELEASE.jar;H:\maven_repository\org\springframework\boot\spring-boot-actuator\1.5.9.RELEASE\spring-boot-actuator-1.5.9.RELEASE.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.8.10\jackson-databind-2.8.10.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.8.0\jackson-annotations-2.8.0.jar;H:\maven_repository\com\fasterxml\jackson\core\jackson-core\2.8.10\jackson-core-2.8.10.jar;H:\softwares\IntelliJ IDEA 15.0.2\lib\idea_rt.jar 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;H:\softwares\python3.6.3\Scripts\;H:\softwares\python3.6.3\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;H:\softwares\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.7.0_67\bin;H:\softwares\Git\cmd;H:\java softwares\Git\cmd;H:\softwares\python3.7;H:\softwares\PostgreSQL\pg96\bin;H:\softwares\ChromDriver;H:\softwares\geckodriver;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;. 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.io.tmpdir=C:\Users\Administrator\AppData\Local\Temp\ 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:java.compiler=<NA> 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.name=Windows 10 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.arch=amd64 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:os.version=10.0 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.name=Administrator 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.home=C:\Users\Administrator 
+[INFO ] 2017-12-04 15:12:38,965 --main-- [org.apache.zookeeper.ZooKeeper] Client environment:user.dir=H:\idea workspace\spring-boot-elastic 
+[INFO ] 2017-12-04 15:12:38,966 --main-- [org.apache.zookeeper.ZooKeeper] Initiating client connection, connectString=192.168.194.128:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@50acf55d 
+[INFO ] 2017-12-04 15:12:39,016 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Opening socket connection to server 192.168.194.128/192.168.194.128:2181. Will not attempt to authenticate using SASL (unknown error) 
+[INFO ] 2017-12-04 15:12:39,017 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Socket connection established to 192.168.194.128/192.168.194.128:2181, initiating session 
+[INFO ] 2017-12-04 15:12:39,024 --main-SendThread(192.168.194.128:2181)-- [org.apache.zookeeper.ClientCnxn] Session establishment complete on server 192.168.194.128/192.168.194.128:2181, sessionid = 0x160201b0f690009, negotiated timeout = 40000 
+[INFO ] 2017-12-04 15:12:39,027 --main-EventThread-- [org.apache.curator.framework.state.ConnectionStateManager] State change: CONNECTED 
+[INFO ] 2017-12-04 15:12:39,136 --main-- [org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor 
+[INFO ] 2017-12-04 15:12:39,148 --main-- [org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+[INFO ] 2017-12-04 15:12:39,148 --main-- [org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.1 created. 
+[INFO ] 2017-12-04 15:12:39,149 --main-- [com.dangdang.ddframe.job.lite.internal.schedule.JobShutdownHookPlugin] Registering Quartz shutdown hook. 
+[INFO ] 2017-12-04 15:12:39,149 --main-- [org.quartz.simpl.RAMJobStore] RAMJobStore initialized. 
+[INFO ] 2017-12-04 15:12:39,150 --main-- [org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'simpleJobExecutor' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+[INFO ] 2017-12-04 15:12:39,150 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'simpleJobExecutor' initialized from an externally provided properties instance. 
+[INFO ] 2017-12-04 15:12:39,150 --main-- [org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.1 
+[INFO ] 2017-12-04 15:12:39,232 --main-- [org.quartz.core.QuartzScheduler] Scheduler simpleJobExecutor_$_NON_CLUSTERED started. 
+[INFO ] 2017-12-04 15:12:39,252 --main-- [org.springframework.jdbc.datasource.DriverManagerDataSource] Loaded JDBC driver: com.mysql.jdbc.Driver 
+[INFO ] 2017-12-04 15:12:39,965 --main-- [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] Registering beans for JMX exposure on startup 
+[INFO ] 2017-12-04 15:12:39,968 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Registering beans for JMX exposure on startup 
+[INFO ] 2017-12-04 15:12:39,970 --main-- [org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 0 
+[INFO ] 2017-12-04 15:12:39,973 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint] 
+[INFO ] 2017-12-04 15:12:39,986 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint] 
+[INFO ] 2017-12-04 15:12:39,999 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint] 
+[INFO ] 2017-12-04 15:12:40,004 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint] 
+[INFO ] 2017-12-04 15:12:40,007 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint] 
+[INFO ] 2017-12-04 15:12:40,012 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint] 
+[INFO ] 2017-12-04 15:12:40,019 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint] 
+[INFO ] 2017-12-04 15:12:40,022 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint] 
+[INFO ] 2017-12-04 15:12:40,025 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint] 
+[INFO ] 2017-12-04 15:12:40,028 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint] 
+[INFO ] 2017-12-04 15:12:40,034 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint] 
+[INFO ] 2017-12-04 15:12:40,041 --main-- [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint] 
+[INFO ] 2017-12-04 15:12:40,062 --main-- [com.quark.job.SpringBootElasticApplication] Started SpringBootElasticApplication in 2.175 seconds (JVM running for 2.629) 

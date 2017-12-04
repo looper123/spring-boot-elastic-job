@@ -36,43 +36,50 @@
     cron : cron 表达式
     sharding-total-count ： 作业分片数量
     sharding-item-parameters ：分片序列号和参数用等号分隔，多个键值对用逗号分隔 分片序列号从0开始， value是分片的名 不可大于或等于作业分片总数
-    job-sharding-strategy-class="" 作业分片策略  把 sharding-total-count 总片数分配到各个集群节点上
+    job-sharding-strategy-class="" 作业分片策略  把 sharding-total-count 总片数分配到各个集群节点上 （默认有三种策略 也可以自定义策略）
     event-trace-rdb-data-source 用于追踪job信息  并且自动在配置的数据源库中创建 两张表JOB_EXECUTION_LOG和JOB_STATUS_TRACE_LOG
     monitor-port 用于dump 作业信息
-    reconcile-interval-minutes  另外启动一个线程来同步作业服务器和注册中心的检查间隔时间
+    reconcile-interval-minutes  另外启动一个线程来同步作业服务器和注册中心的状态（把下线的作业服务器剔除后重新给job分片）
+    重新分片条件 ： 1 当前节点为主节点  2 当前节点不需要重新分片  3 包含分片的的服务器下线
     -->
     <!-- id 不要叫 mySimpleJob  默认有一个mySimpleJob 会覆盖你的配置 -->
-    <job:simple id="simpleJobExecutor" class="com.quark.job.scheduler.MySimpleJob" registry-center-ref="regCenter"
-                 cron="0/10 * * * * ?" sharding-total-count="5"  description="简单job" sharding-item-parameters="0=MyA,1=MyB,2=MyC" failover="false"
-                 misfire="true"  job-sharding-strategy-class="" event-trace-rdb-data-source="myDataSource"   monitor-port="9888" monitor-execution="true"
-                reconcile-interval-minutes="10">
+    <job:simple id="simpleJobExecutor"
+                monitor-port="9999" class="com.quark.job.scheduler.MySimpleJob" registry-center-ref="regCenter"
+                cron="0/10 * * * * ?" sharding-total-count="3" sharding-item-parameters="0=A,1=B,2=C">
+                <!--class="com.quark.job.scheduler.MySimpleJob" registry-center-ref="regCenter"-->
+                <!--cron="0/20 * * * * ?" sharding-total-count="5" description="简单job"-->
+                <!--sharding-item-parameters="0=MyA,1=MyB,2=MyC" failover="false"-->
+                <!--misfire="true" job-sharding-strategy-class="" event-trace-rdb-data-source="myDataSource"-->
+                <!--monitor-port="9888" monitor-execution="true"-->
+                <!--reconcile-interval-minutes="1">-->
         <!--注意-->
         <!--job:listener必须配置为job:bean的子元素，并且在子元素中只允许出现一次-->
         <!--job:distributed-listener必须配置为job:bean的子元素，并且在子元素中只允许出现一次-->
         <!--普通监听器 在所有节点job 前后执行 -->
         <job:listener class="com.quark.job.listener.MyElasticJobListener"/>
         <!--只会在指定节点前后执行-->
-        <job:distributed-listener class="com.quark.job.listener.MyDistributeOnceElasticJobListener" started-timeout-milliseconds="2000" completed-timeout-milliseconds="2000"/>
+        <job:distributed-listener class="com.quark.job.listener.MyDistributeOnceElasticJobListener"
+                                  started-timeout-milliseconds="2000" completed-timeout-milliseconds="2000"/>
     </job:simple>
 
 
     <!--dataflow jOb配置-->
     <!--具体字段含义参考 http://elasticjob.io/docs/elastic-job-lite/02-guide/event-trace/-->
-    <job:dataflow id="myDataFlowJob" class="com.quark.job.scheduler.MyDataflowJob" registry-center-ref="regCenter"
-                  cron="0/15 * * * * ?" sharding-total-count="2"
-                  event-trace-rdb-data-source="myDataSource" sharding-item-parameters="0=DataFlowA,1=DataFlowB"
-                  failover="false" misfire="true" description="数据流job"  monitor-port="9888">
-        <!--普通监听器 在所有节点job 前后执行 -->
-        <job:listener class="com.quark.job.listener.MyElasticJobListener"/>
-        <!--只会在一个节点前后执行-->
-        <!--参数
-        started-timeout-milliseconds 最后一个作业执行前的执行方法的超时时间
-        completed-timeout-milliseconds 最后一个作业执行后的执行方法的超时时间
-        -->
-        <job:distributed-listener class="com.quark.job.listener.MyDistributeOnceElasticJobListener"
+    <!--<job:dataflow id="myDataFlowJob" class="com.quark.job.scheduler.MyDataflowJob" registry-center-ref="regCenter"-->
+                  <!--cron="0/15 * * * * ?" sharding-total-count="2"-->
+                  <!--event-trace-rdb-data-source="myDataSource" sharding-item-parameters="0=DataFlowA,1=DataFlowB"-->
+                  <!--failover="false" misfire="true" description="数据流job" monitor-port="9888">-->
+        <!--&lt;!&ndash;普通监听器 在所有节点job 前后执行   必须放在 job:bean 的内部&ndash;&gt;-->
+        <!--<job:listener class="com.quark.job.listener.MyElasticJobListener"/>-->
+        <!--&lt;!&ndash;只会在一个节点前后执行&ndash;&gt;-->
+        <!--&lt;!&ndash;参数-->
+        <!--started-timeout-milliseconds 最后一个作业执行前的执行方法的超时时间-->
+        <!--completed-timeout-milliseconds 最后一个作业执行后的执行方法的超时时间-->
+        <!--&ndash;&gt;-->
+        <!--<job:distributed-listener class="com.quark.job.listener.MyDistributeOnceElasticJobListener"-->
 
-                                  started-timeout-milliseconds="20000" completed-timeout-milliseconds="20000"/>
-    </job:dataflow>
+                                  <!--started-timeout-milliseconds="20000" completed-timeout-milliseconds="20000"/>-->
+    <!--</job:dataflow>-->
 
     <!--dataflow 数据源bean-->
     <bean id="myDataSource"
