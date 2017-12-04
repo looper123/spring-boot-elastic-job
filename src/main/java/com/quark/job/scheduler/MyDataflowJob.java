@@ -27,11 +27,11 @@ public class MyDataflowJob implements DataflowJob {
     public void processData(ShardingContext shardingContext, List data) {
         for (int i = 0; i < data.size(); i++) {
             Map employeeMap = (Map) data.get(i);
-             System.out.println(employeeMap.get("FIRST_NAME"));
-             System.out.println(employeeMap.get("LAST_NAME"));
-             System.out.println(employeeMap.get("AGE"));
-             System.out.println(employeeMap.get("SEX"));
-             System.out.println(employeeMap.get("INCOME"));
+             System.out.println("dataFlow job is executing...."+employeeMap.get("FIRST_NAME"));
+//             System.out.println(employeeMap.get("LAST_NAME"));
+//             System.out.println(employeeMap.get("AGE"));
+//             System.out.println(employeeMap.get("SEX"));
+//             System.out.println(employeeMap.get("INCOME"));
         }
     }
 }
