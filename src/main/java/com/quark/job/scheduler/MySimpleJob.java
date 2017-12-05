@@ -3,6 +3,7 @@ package com.quark.job.scheduler;
 import com.dangdang.ddframe.job.api.ShardingContext;
 import com.dangdang.ddframe.job.api.simple.SimpleJob;
 
+
 /**
  * Created by Administrator on 2017/11/30/030.
  * 简单分布式作业

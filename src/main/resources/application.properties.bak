@@ -1,15 +1,18 @@
+
 #spring boot 默认会寻找并且加载一个数据源 不然会报错
 spring.datasource.url=jdbc:mysql://192.168.194.128:3306/TESTDB
 spring.datasource.username=root
 spring.datasource.password=root
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 
+server.address=localhost
+server.port=8080
 
 #启用shutdown （方便linux下关闭）
-# 关闭请求 默认 curl -X POST localhost:8080/shutdown（发送post请求）
+# 关闭请求 默认 （发送post请求）
 # 如果提示connection refused  可能是因为 端口或者ip不对
 endpoints.shutdown.enabled=true
-#配置自定的路径前后缀 curl -X POST localhost:8080/manage/shutdown
+#配置自定的路径前后缀 curl -X POST localhost:8080/shutdown
 #management.context-path=/manage
 
 

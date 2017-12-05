@@ -8,6 +8,7 @@ import com.dangdang.ddframe.job.reg.base.CoordinatorRegistryCenter;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
 
+
 /**
  * Created by Administrator on 2017/11/30/030.
  * 不依赖 spring 启动调度

@@ -28,6 +28,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+			<version>1.5.9.RELEASE</version>
 		</dependency>
 
 		<dependency>
@@ -35,6 +36,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>1.5.9.RELEASE</version>
+		</dependency>
+
+
 
 		<!-- elastic-job lite  核心包-->
 		<dependency>
@@ -48,6 +57,12 @@
 			<artifactId>elastic-job-lite-spring</artifactId>
 			<version>2.1.5</version>
 		</dependency>
+		<dependency>
+			<groupId>com.dangdang</groupId>
+			<artifactId>elastic-job-lite-lifecycle</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+
 		<!-- elastic job 控制台-->
 		<dependency>
 			<groupId>com.dangdang</groupId>
@@ -55,12 +70,15 @@
 			<version>2.1.5</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+		<!-- spring-jdbc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>4.3.13.RELEASE</version>
 		</dependency>
+
+
+
 
 
 		<!--<dependency>-->
