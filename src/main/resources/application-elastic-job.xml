@@ -43,8 +43,8 @@
     echo "dump" | nc <任意一台作业服务器IP> 9888 > job_debug.txt
     reconcile-interval-minutes  另外启动一个线程来同步作业服务器和注册中心的状态（把下线的作业服务器剔除后重新给job分片）
     重新分片条件 ： 1 当前节点为主节点  2 当前节点不需要重新分片  3 包含分片的的服务器下线
+    overwrite : 是否以本地的配置为准（覆盖zookeeper中记录的配置信息）
     -->
-    <!-- id 不要叫 mySimpleJob  默认有一个mySimpleJob 会覆盖你的配置 -->
     <job:simple id="simpleJobExecutor"
                 class="com.quark.job.scheduler.MySimpleJob" registry-center-ref="regCenter"
                 cron="0/20 * * * * ?" sharding-total-count="5" description="简单job"
