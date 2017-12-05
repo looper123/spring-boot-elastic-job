@@ -13,3 +13,6 @@
 8 console时间追踪数据源配置 url 参数 参照格式 jdbc:mysql://192.168.194.128:3306/TESTDB?useUnicode=true&characterEncoding=UTF-8（不能直接用ip:port 的形式连接）
 这样是无法连接上的
 
+遇到的坑：
+如果不引入spring 内嵌的tomcat包 elastic会用zookeeper包下内置的netty服务器来启动项目（启动不会报错） 这时job和zookeeper会在同一进程下的不同端口，内嵌包包含在
+spring-boot-web包下
