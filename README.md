@@ -1,4 +1,5 @@
-# elastic job console 部署
+elastic job console 部署
+===
 1 下载 elastic-job-lite-console 项目 地址：https://github.com/elasticjob/elastic-job/tree/master/elastic-job-lite/elastic-job-lite-console
 2 打包
 3 解压
@@ -14,5 +15,6 @@
 这样是无法连接上的
 
 遇到的坑：
+---
 如果不引入spring 内嵌的tomcat包 elastic会用zookeeper包下内置的netty服务器来启动项目（启动不会报错） 这时job和zookeeper会在同一进程下的不同端口，内嵌包包含在
 spring-boot-web包下
